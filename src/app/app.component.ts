@@ -14,6 +14,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     const { dev, production, test } = environment;
 
+    console.log('for testing');
+
     if (dev === true) {
       this.environment = 'Development';
     } else if (test === true) {
