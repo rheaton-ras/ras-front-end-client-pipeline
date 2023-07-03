@@ -1,10 +1,10 @@
-name: Publish DEV
+name: Publish PROD
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - development
+      - main
 
 env:
   APP_LOCATION: "/" # location of your client code

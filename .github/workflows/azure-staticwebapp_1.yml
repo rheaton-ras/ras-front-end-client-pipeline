@@ -1,10 +1,10 @@
-name: Publish DEV
+name: Publish TEST
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - development
+      - test
 
 env:
   APP_LOCATION: "/" # location of your client code
