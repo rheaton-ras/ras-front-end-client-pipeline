@@ -3,7 +3,8 @@ name: Publish
 on:
   workflow_dispatch:
   push:
-    branches: ["development"]
+    branches:
+      - development
 
 env:
   APP_LOCATION: "/" # location of your client code
