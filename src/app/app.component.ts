@@ -12,11 +12,11 @@ export class AppComponent implements OnInit {
   environment: string = 'This is it!!';
 
   ngOnInit() {
-    const { dev, production, test } = environment;
+    const { dev, production, test, local } = environment;
 
-    console.log('for testing');
-
-    if (dev === true) {
+    if (local === true) {
+      this.environment = 'Local';
+    } else if (dev === true) {
       this.environment = 'Development';
     } else if (test === true) {
       this.environment = 'Test';

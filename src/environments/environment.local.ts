@@ -1,8 +1,8 @@
 export const environment = {
-  dev: true,
+  dev: false,
   production: false,
   test: false,
-  local: false,
+  local: true,
 };
 
 import 'zone.js/plugins/zone-error';
